@@ -18,12 +18,11 @@
         <legend>Personal information</legend>
 
         <div class="distance">
-          <label for="surname">
+          <label>
             Surname:
             <input
               type="text"
               name="surname"
-              id="surname"
               autocomplete="off"
               required
             >
@@ -31,12 +30,11 @@
         </div>
 
         <div class="distance">
-          <label for="name">
+          <label>
             Name:
             <input
               type="text"
               name="name"
-              id="name"
               autocomplete="off"
               required
             >
@@ -44,34 +42,32 @@
         </div>
 
         <div class="distance">
-          <label for="age">
+          <label>
             How old are You?
             <input
-                type="number"
-                name="age"
-                id="age"
-                min="1"
-                max="100"
-                value="12"
+              type="number"
+              name="age"
+              min="1"
+              max="100"
+              value="12"
             >
           </label>
         </div>
 
         <div class="distance">
-          <label for="dataOfBirth">
+          <label>
             Full date of birth:
             <input
               type="date"
-              name="dataOfBirth"
-              id="dataOfBirth"
+              name="data-of-birth"
             >
           </label>
         </div>
 
         <div class="distance-last">
-          <label for="termOfAgreement">
+          <label>
             I accept the term of the agreement
-            <input type="checkbox" name="termOfAgreement">
+            <input type="checkbox" name="term-of-agreement">
           </label>
         </div>
 
@@ -82,24 +78,23 @@
         <legend>Registration</legend>
 
         <div class="distance">
-          <label for="email">
+          <label>
             E-mail:
             <input
               type="email"
               name="email"
-              id="email"
               placeholder="email@example.com"
+              required
             >
           </label>
         </div>
 
         <div class="distance-last">
-          <label for="password">
+          <label>
             Password:
             <input
               type="password"
               name="password"
-              id="password"
               required
             >
           </label>
@@ -112,31 +107,36 @@
         <legend>An interesting fact about you!</legend>
 
         <div class="distance">
-          <label for="loveCats">
-            Do you love cats?
-            <input type="radio" name="yes" id="yes"> Yes
-            <input type="radio" name="no" id="no"> No
+          Do you love cats?
+          <label>
+            <input type="radio" name="yes"> Yes
+          </label>
+          <label>
+            <input type="radio" name="no"> No
           </label>
         </div>
 
         <div class="distance">
-          <label for="color">
+          <label>
             What is your favorite color?
-            <input type="color" name="color" id="color">
+            <input type="color" name="color">
           </label>
         </div>
 
         <div class="distance">
-          <label for="time">
+          <label>
             What time do you go to bad?
-            <input type="time" name="time" step="2">
+            <input
+              type="time"
+              name="time"
+              step="2">
           </label>
         </div>
 
         <div class="distance">
-          <label for="carBrend">
+          <label>
             What are your favorite brand of cars?
-            <select name="carBrend" multiple>
+            <select name="car-brend" multiple>
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
@@ -145,12 +145,11 @@
         </div>
 
         <div class="distance-last">
-          <label for="rateOurWork">
+          <label>
             How do you rate our work?
             <input
               type="range"
-              name="rateOurWork"
-              id="rateOurWork"
+              name="rate-out-work"
               min="1"
               max="10"
               value="1"
@@ -165,16 +164,16 @@
         <legend>Additional info:</legend>
 
         <div class="distance">
-          <label for="comments">
+          <label>
             Comments:
-            <textarea name="comments" id="comments"></textarea>
+            <textarea name="comments"></textarea>
           </label>
         </div>
 
         <div class="distance-last">
-          <label for="recommendation">
+          <label>
             Would you recommend us?
-            <select name="recommendation" id="recommendation">
+            <select name="recommendation">
               <option value="yes">yes</option>
               <option value="no">no</option>
             </select>
