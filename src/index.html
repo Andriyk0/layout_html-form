@@ -11,7 +11,182 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <fieldset class="group-distance">
+
+        <legend>Personal information</legend>
+
+        <div class="distance">
+          <label for="surname">
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="name">
+            Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="age">
+            How old are You?
+            <input
+                type="number"
+                name="age"
+                id="age"
+                min="1"
+                max="100"
+                value="12"
+            >
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="dataOfBirth">
+            Full date of birth:
+            <input
+              type="date"
+              name="dataOfBirth"
+              id="dataOfBirth"
+            >
+          </label>
+        </div>
+
+        <div class="distance-last">
+          <label for="termOfAgreement">
+            I accept the term of the agreement
+            <input type="checkbox" name="termOfAgreement">
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="group-distance">
+
+        <legend>Registration</legend>
+
+        <div class="distance">
+          <label for="email">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+            >
+          </label>
+        </div>
+
+        <div class="distance-last">
+          <label for="password">
+            Password:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+            >
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="group-distance">
+
+        <legend>An interesting fact about you!</legend>
+
+        <div class="distance">
+          <label for="loveCats">
+            Do you love cats?
+            <input type="radio" name="yes" id="yes"> Yes
+            <input type="radio" name="no" id="no"> No
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="color">
+            What is your favorite color?
+            <input type="color" name="color" id="color">
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="time">
+            What time do you go to bad?
+            <input type="time" name="time" step="2">
+          </label>
+        </div>
+
+        <div class="distance">
+          <label for="carBrend">
+            What are your favorite brand of cars?
+            <select name="carBrend" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="distance-last">
+          <label for="rateOurWork">
+            How do you rate our work?
+            <input
+              type="range"
+              name="rateOurWork"
+              id="rateOurWork"
+              min="1"
+              max="10"
+              value="1"
+            >
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="group-distance">
+
+        <legend>Additional info:</legend>
+
+        <div class="distance">
+          <label for="comments">
+            Comments:
+            <textarea name="comments" id="comments"></textarea>
+          </label>
+        </div>
+
+        <div class="distance-last">
+          <label for="recommendation">
+            Would you recommend us?
+            <select name="recommendation" id="recommendation">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+
+      </fieldset>
+
+      <button class="btn" type="submit">Submit</button>
+
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
